@@ -94,7 +94,6 @@ function collision(head,array){
 		 ctx.strokeStyle="red";
 		 ctx.strokeRect(snake[i].x,snake[i].y,box,box);
 	 } */
-	 //ctx.drawImage(ship1,snake[0].x,snake[0].y);
 
 	 
 	 i==1?ctx.drawImage(foodImg2,food.x,food.y):ctx.drawImage(foodImg,food.x,food.y);
@@ -109,6 +108,7 @@ function collision(head,array){
 	 
 	 
 	 //wich direction
+	 
 	 if (d =="LEFT") {snakex -= box ;
 		ctx.drawImage(ship1,snake[0].x,snake[0].y);
                     }
@@ -160,10 +160,10 @@ function collision(head,array){
 		 x :snakex,
 		 y :snakey }
     
-    	 if(collision(newHead,snake)){
+    	/*  if(collision(newHead,snake)){
 		 clearInterval(game);
          dead.play();
-	 }
+	 }*/ 
     
      
 	 
